@@ -1,14 +1,6 @@
 # Instructions for installing Robot Operating System 2 Foxy Distribtuion (Ros2-Foxy) inside a virtual machine, inside of Windows 10. 
 
-These instructions are for Windows 10. They should _probably_ work on a Mac, but I have not tested. If you are installing on a Mac and run into the Virtualbox "kernel driver not installed (rc=-1908)" error, see the bottom of this page. it may be resolvable by doing the following From a **comment** on this post https://medium.com/@Aenon/mac-virtualbox-kernel-driver-error-df39e7e10cd8:
-
-"It’s not necessary to reinstall VirtualBox in order to resolve this problem. As described in the VirtualBox forum for macOS hosts, you can do the following instead:
-Restart your machine and enter Recovery Mode (Press and hold ⌘-R on reboot.)
-Open the Terminal.
-Type the following: spctl kext-consent add VB5E2TV963
-Press Enter.
-Restart your machine."
-
+These instructions are for Windows 10. They should _probably_ work on a Mac, but I have not tested. If you are installing on a Mac and run into the Virtualbox "kernel driver not installed (rc=-1908)" error, see the bottom of this page.
 
 ## Install Oracle VM VirtualBox Manager
 You will need VirtualBox to run your virtual machines inside of Windows. Windows 10 now includes native suport for running a Linux VM inside of Windows through the Microsoft Store but there are still issues with networking and GUIs; so we will use VirtualBox.
@@ -81,7 +73,7 @@ The instructions for these installs can be found in the tutorials, but you can i
 https://docs.ros.org/en/foxy/Tutorials/Turtlesim/Introducing-Turtlesim.html#turtlesim
 
 
-#### Mac Kernel driver not installed error
+## Mac Kernel driver not installed error
 If you are installing on a Mac and run into the Virtualbox "kernel driver not installed (rc=-1908)" error, see the bottom of this page. it may be resolvable by doing the following From a **comment** on this post https://medium.com/@Aenon/mac-virtualbox-kernel-driver-error-df39e7e10cd8:
 
 "It’s not necessary to reinstall VirtualBox in order to resolve this problem. As described in the VirtualBox forum for macOS hosts, you can do the following instead:
