@@ -45,6 +45,25 @@ All of these are done inside your virtual machine, not in your windows operating
 6. `git config --global user.email "Your email"`
 7. `git version`
 
+### Install and configure Docker
+1. Open a terminal
+2. run the following commands:
+3. `sudo apt-get update`
+4. `sudo apt-get install \`
+    `apt-transport-https \`
+    `ca-certificates \`
+    `curl \`
+    `gnupg \`
+    `lsb-release`
+5. `curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg`
+6. `echo \`
+  `"deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu \
+  $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null`
+7. `sudo apt-get update`
+8. `sudo apt-get install docker-ce docker-ce-cli containerd.io`
+
+
+
 ### Install and configure Ros2-Foxy
 Follow the instructions to install and setup Ros2-Foxy in your Ubuntu VM:
 You will need to open a terminal again, or use the same terminal as before.
